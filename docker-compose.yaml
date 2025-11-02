@@ -1,0 +1,96 @@
+version: '3.9'
+
+services:
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+
+  loki:
+    image: grafana/loki:3.0.0
+    container_name: loki
+    ports:
+      - "3100:3100"
+    command: -config.file=/etc/loki/local-config.yaml
+
+  promtail:
+    image: grafana/promtail:3.0.0
+    container_name: promtail
+    volumes:
+      - ./promtail/config.yml:/etc/promtail/config.yml
+      - ./fake_logs:/var/log/fake
+    depends_on:
+      - loki
+
+  fake-logs:
+    build: ./fake_logs
+    container_name: fake-logs
+    volumes:
+      - ./fake_logs:/var/log/fake
+    depends_on:
+      - promtail
+
+  # 🧠 Local LLM for log analysis (Ollama)
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  flask-api:
+    build: ./flask_api
+    container_name: flask-api
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./flask_api/.env
+    depends_on:
+      - prometheus
+      - loki
+      - ollama   # 👈 add dependency
+    environment:
+      - OLLAMA_URL=http://ollama:11434  # 👈 internal network access
+
+  react-dashboard:
+    image: node:18
+    container_name: react-dashboard
+    working_dir: /app
+    volumes:
+      - ./react_dashboard:/app
+    ports:
+      - "5173:5173"
+    command: ["npm", "run", "dev"]
+    depends_on:
+      - flask-api
+
+volumes:
+  ollama_data:
+
