@@ -1,4 +1,7 @@
 flask
 flask-cors
 requests
+chromadb>=0.4.0
+
+
 

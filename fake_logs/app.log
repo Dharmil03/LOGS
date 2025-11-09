@@ -7503,3 +7503,599 @@
 2025-10-29 17:58:32,518 ERROR: K8s pod restarted
 2025-10-29 17:58:33,389 INFO: DB connection failed
 2025-10-29 17:58:34,559 WARNING: K8s pod restarted
+2025-11-09 09:38:15,017 [ERROR] [db-connection] Deadlock detected in transaction_id=89afd5833931, rolling back
+2025-11-09 09:43:29,545 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 09:43:30,596 [WARNING] [cache-manager] Cache miss for key=user:236, fetching from DB
+2025-11-09 09:45:41,796 [WARNING] [db-connection] Connection pool exhausted, waiting threads=311
+2025-11-09 09:45:42,882 [ERROR] [cache-manager] Redis connection error: BrokenPipeError
+2025-11-09 09:49:41,928 [ERROR] [auth-service] Failed to validate credentials for user_id=1259, reason=InvalidSignatureError
+2025-11-09 09:49:43,611 [ERROR] [db-connection] Deadlock detected in transaction_id=9991db406cef, rolling back
+2025-11-09 10:05:52,476 [WARNING] [auth-service] JWT token expired for user_id=3172
+2025-11-09 10:05:53,757 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 10:05:54,267 [WARNING] [cache-manager] Cache miss for key=user:463, fetching from DB
+2025-11-09 10:05:56,240 [WARNING] [auth-service] JWT token expired for user_id=4989
+2025-11-09 10:12:50,310 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=44579ec6-222a-40d9-87d8-4d2519138709
+2025-11-09 10:37:28,098 [WARNING] [cache-manager] Cache miss for key=user:126, fetching from DB
+2025-11-09 10:37:28,631 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 10:37:30,528 [WARNING] [auth-service] JWT token expired for user_id=4173
+2025-11-09 10:37:30,995 [INFO] [cache-manager] Cache hit for key=user:162
+2025-11-09 10:48:04,084 [ERROR] [db-connection] Deadlock detected in transaction_id=79125475e5e8, rolling back
+2025-11-09 14:12:01,659 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=2ea75f49-8b57-4a92-8037-96c6b8d0c30c
+2025-11-09 14:12:02,225 [INFO] [cache-manager] Cache hit for key=user:339
+2025-11-09 14:15:12,485 [INFO] [kafka-producer] Produced message to topic=notifications offset=6944
+2025-11-09 14:15:13,551 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=16f2d0e5-78a8-4505-9f60-0aa5cc90e543
+2025-11-09 14:15:15,132 [INFO] [auth-service] User login success user_id=3276 session_id=f8a03b65-73fe-4940-9c8c-65da7fa38169
+2025-11-09 14:15:15,613 [ERROR] [auth-service] Failed to validate credentials for user_id=3055, reason=InvalidSignatureError
+2025-11-09 14:15:17,209 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=208fd3f2-653f-44b6-a619-d0016ed698fa
+2025-11-09 14:15:18,758 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=0647dee1-69b9-4f35-a5c0-d9894949c06d
+2025-11-09 14:15:20,134 [WARNING] [db-connection] Connection pool exhausted, waiting threads=376
+2025-11-09 14:15:20,473 [INFO] [auth-service] User login success user_id=4863 session_id=43dd8dc2-318b-4543-aaf0-f67984841a34
+2025-11-09 14:15:21,975 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=22bdad50-4c2f-44ec-9019-5003d65e0226
+2025-11-09 14:15:23,813 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=11dba50c-073f-4aef-86cc-f1851b492c4f
+2025-11-09 14:15:24,199 [ERROR] [db-connection] DB connection timeout after 1780ms while acquiring from pool_size=38
+2025-11-09 14:15:24,668 [ERROR] [db-connection] Deadlock detected in transaction_id=31b74b9ae014, rolling back
+2025-11-09 14:15:25,787 [ERROR] [auth-service] Failed to validate credentials for user_id=2595, reason=InvalidSignatureError
+2025-11-09 14:15:26,241 [INFO] [api-gateway] Received PATCH request to /api/v1/orders
+2025-11-09 14:15:27,591 [ERROR] [db-connection] Deadlock detected in transaction_id=daeda3b6ba21, rolling back
+2025-11-09 14:15:28,399 [INFO] [cache-manager] Cache hit for key=user:302
+2025-11-09 14:15:30,136 [INFO] [kafka-producer] Produced message to topic=notifications offset=7323
+2025-11-09 14:15:31,720 [WARNING] [api-gateway] Slow API response 2561ms for endpoint /metrics
+2025-11-09 14:15:33,299 [WARNING] [api-gateway] Slow API response 963ms for endpoint /api/v1/user
+2025-11-09 14:15:34,334 [WARNING] [auth-service] JWT token expired for user_id=1569
+2025-11-09 14:15:35,781 [INFO] [api-gateway] Received DELETE request to /api/v1/login
+2025-11-09 14:15:36,410 [INFO] [auth-service] User login success user_id=4823 session_id=5d075c6f-de04-478d-8198-ee0dda9b92cf
+2025-11-09 14:15:38,294 [WARNING] [cache-manager] Cache miss for key=user:344, fetching from DB
+2025-11-09 14:15:39,558 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:15:41,219 [WARNING] [db-connection] Connection pool exhausted, waiting threads=273
+2025-11-09 14:15:42,389 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=694270ed-c056-4ff1-862c-991da0b2b501
+2025-11-09 14:15:43,073 [WARNING] [api-gateway] Slow API response 2166ms for endpoint /api/v1/orders
+2025-11-09 14:15:44,211 [INFO] [api-gateway] Received GET request to /health
+2025-11-09 14:15:45,231 [WARNING] [auth-service] JWT token expired for user_id=4608
+2025-11-09 14:15:45,994 [WARNING] [api-gateway] Slow API response 2591ms for endpoint /health
+2025-11-09 14:15:47,130 [ERROR] [cache-manager] Redis connection error: ConnectionRefusedError
+2025-11-09 14:15:49,007 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/orders (status=502)
+2025-11-09 14:15:50,195 [ERROR] [db-connection] Deadlock detected in transaction_id=0f27898dc372, rolling back
+2025-11-09 14:15:51,746 [INFO] [cache-manager] Cache hit for key=user:70
+2025-11-09 14:15:52,330 [ERROR] [db-connection] DB connection timeout after 1927ms while acquiring from pool_size=18
+2025-11-09 14:15:52,895 [WARNING] [db-connection] Connection pool exhausted, waiting threads=357
+2025-11-09 14:15:54,879 [WARNING] [auth-service] JWT token expired for user_id=2976
+2025-11-09 14:15:56,057 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/login (status=503)
+2025-11-09 14:15:57,837 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=ca2d4805-a635-4971-83be-78fbc6043b3e
+2025-11-09 14:15:59,688 [ERROR] [auth-service] Failed to validate credentials for user_id=4224, reason=InvalidSignatureError
+2025-11-09 14:16:00,770 [WARNING] [cache-manager] Cache miss for key=user:295, fetching from DB
+2025-11-09 14:16:02,380 [INFO] [cache-manager] Cache hit for key=user:90
+2025-11-09 14:16:03,245 [ERROR] [api-gateway] Upstream service unavailable: /health (status=503)
+2025-11-09 14:16:04,360 [WARNING] [auth-service] JWT token expired for user_id=2662
+2025-11-09 14:16:05,645 [INFO] [db-connection] Executed query in 28ms: SELECT * FROM users WHERE id=349
+2025-11-09 14:16:07,105 [ERROR] [kafka-producer] Failed to send message to topic=notifications, error=TimeoutException
+2025-11-09 14:16:08,394 [ERROR] [auth-service] Failed to validate credentials for user_id=1977, reason=InvalidSignatureError
+2025-11-09 14:16:10,169 [ERROR] [api-gateway] Upstream service unavailable: /metrics (status=504)
+2025-11-09 14:16:10,659 [INFO] [api-gateway] Received DELETE request to /api/v1/login
+2025-11-09 14:16:11,044 [WARNING] [db-connection] Connection pool exhausted, waiting threads=902
+2025-11-09 14:16:12,641 [INFO] [api-gateway] Received GET request to /api/v1/orders
+2025-11-09 14:16:14,008 [INFO] [auth-service] User login success user_id=3107 session_id=6a321014-c5e4-4230-b4e9-ec3605616aeb
+2025-11-09 14:16:14,859 [ERROR] [api-gateway] Upstream service unavailable: /metrics (status=502)
+2025-11-09 14:16:16,358 [INFO] [api-gateway] Received PATCH request to /api/v1/user
+2025-11-09 14:16:17,184 [ERROR] [kafka-producer] Failed to send message to topic=user-activity, error=TimeoutException
+2025-11-09 14:16:18,155 [ERROR] [auth-service] Failed to validate credentials for user_id=1743, reason=InvalidSignatureError
+2025-11-09 14:16:18,802 [INFO] [kafka-producer] Produced message to topic=notifications offset=1340
+2025-11-09 14:16:20,722 [WARNING] [db-connection] Connection pool exhausted, waiting threads=880
+2025-11-09 14:16:22,453 [INFO] [cache-manager] Cache hit for key=user:241
+2025-11-09 14:16:22,960 [WARNING] [api-gateway] Slow API response 347ms for endpoint /api/v1/login
+2025-11-09 14:16:23,533 [ERROR] [db-connection] Deadlock detected in transaction_id=90ca5e24de2a, rolling back
+2025-11-09 14:16:23,898 [INFO] [kafka-producer] Produced message to topic=auth-events offset=3749
+2025-11-09 14:16:24,649 [WARNING] [auth-service] JWT token expired for user_id=3651
+2025-11-09 14:16:26,378 [INFO] [db-connection] Executed query in 67ms: SELECT * FROM users WHERE id=610
+2025-11-09 14:16:28,175 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/user (status=502)
+2025-11-09 14:16:29,693 [ERROR] [cache-manager] Redis connection error: BrokenPipeError
+2025-11-09 14:16:30,039 [ERROR] [db-connection] DB connection timeout after 333ms while acquiring from pool_size=44
+2025-11-09 14:16:30,465 [ERROR] [db-connection] DB connection timeout after 741ms while acquiring from pool_size=47
+2025-11-09 14:16:31,057 [INFO] [cache-manager] Cache hit for key=user:207
+2025-11-09 14:16:32,162 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/orders (status=504)
+2025-11-09 14:16:32,919 [ERROR] [db-connection] DB connection timeout after 1410ms while acquiring from pool_size=19
+2025-11-09 14:16:34,108 [INFO] [auth-service] User login success user_id=3087 session_id=5d1b8920-fa8c-4709-b49e-742b696ada0f
+2025-11-09 14:16:34,566 [INFO] [db-connection] Executed query in 26ms: SELECT * FROM users WHERE id=1579
+2025-11-09 14:16:35,511 [WARNING] [db-connection] Connection pool exhausted, waiting threads=973
+2025-11-09 14:16:36,563 [ERROR] [kafka-producer] Failed to send message to topic=notifications, error=TimeoutException
+2025-11-09 14:16:38,294 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=14bc4a35-fa2a-4ed6-9f25-16c9344d17c8
+2025-11-09 14:16:40,173 [INFO] [kafka-producer] Produced message to topic=auth-events offset=2130
+2025-11-09 14:16:41,468 [INFO] [cache-manager] Cache hit for key=user:217
+2025-11-09 14:16:42,803 [ERROR] [db-connection] DB connection timeout after 1748ms while acquiring from pool_size=28
+2025-11-09 14:16:44,370 [INFO] [api-gateway] Received POST request to /api/v1/user
+2025-11-09 14:16:46,254 [WARNING] [db-connection] Connection pool exhausted, waiting threads=766
+2025-11-09 14:16:46,604 [ERROR] [auth-service] Failed to validate credentials for user_id=2734, reason=InvalidSignatureError
+2025-11-09 14:16:48,221 [WARNING] [cache-manager] Cache miss for key=user:135, fetching from DB
+2025-11-09 14:16:49,480 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:16:50,228 [ERROR] [api-gateway] Upstream service unavailable: /metrics (status=502)
+2025-11-09 14:16:51,069 [WARNING] [auth-service] JWT token expired for user_id=4471
+2025-11-09 14:16:52,684 [INFO] [cache-manager] Cache hit for key=user:30
+2025-11-09 14:16:54,443 [ERROR] [cache-manager] Redis connection error: BrokenPipeError
+2025-11-09 14:16:54,909 [INFO] [api-gateway] Received POST request to /health
+2025-11-09 14:16:56,775 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=261519c1-5249-4c9b-95bd-3c9b88c39b50
+2025-11-09 14:16:57,881 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:16:58,781 [ERROR] [cache-manager] Redis connection error: ConnectionRefusedError
+2025-11-09 14:17:00,230 [ERROR] [db-connection] Deadlock detected in transaction_id=2c91b82921e7, rolling back
+2025-11-09 14:17:01,169 [WARNING] [db-connection] Connection pool exhausted, waiting threads=773
+2025-11-09 14:17:02,687 [INFO] [db-connection] Executed query in 53ms: SELECT * FROM users WHERE id=1639
+2025-11-09 14:17:03,597 [INFO] [api-gateway] Received PATCH request to /metrics
+2025-11-09 14:23:34,985 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=b991cefa-ccbf-44d2-9d98-a1bcdd1996c0
+2025-11-09 14:23:36,376 [ERROR] [db-connection] DB connection timeout after 1380ms while acquiring from pool_size=37
+2025-11-09 14:23:36,902 [WARNING] [api-gateway] Slow API response 663ms for endpoint /health
+2025-11-09 14:23:38,713 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:23:39,868 [ERROR] [api-gateway] Upstream service unavailable: /health (status=504)
+2025-11-09 14:23:41,642 [ERROR] [db-connection] DB connection timeout after 712ms while acquiring from pool_size=20
+2025-11-09 14:23:42,863 [INFO] [kafka-producer] Produced message to topic=order-stream offset=7949
+2025-11-09 14:23:44,038 [WARNING] [cache-manager] Cache miss for key=user:426, fetching from DB
+2025-11-09 14:23:44,873 [INFO] [cache-manager] Cache hit for key=user:455
+2025-11-09 14:23:45,861 [WARNING] [api-gateway] Slow API response 1147ms for endpoint /api/v1/orders
+2025-11-09 14:23:47,784 [ERROR] [db-connection] Deadlock detected in transaction_id=7e67946dd374, rolling back
+2025-11-09 14:23:49,400 [ERROR] [kafka-producer] Failed to send message to topic=user-activity, error=TimeoutException
+2025-11-09 14:23:50,325 [INFO] [db-connection] Executed query in 65ms: SELECT * FROM users WHERE id=212
+2025-11-09 14:23:52,308 [INFO] [auth-service] User login success user_id=2737 session_id=57ffd200-a9b3-411b-a845-bbcd97d80cbb
+2025-11-09 14:23:53,638 [INFO] [cache-manager] Cache hit for key=user:135
+2025-11-09 14:23:54,429 [INFO] [db-connection] Executed query in 152ms: SELECT * FROM users WHERE id=803
+2025-11-09 14:23:54,814 [INFO] [auth-service] User login success user_id=1436 session_id=0175df30-0115-4146-922b-1eff1a5110a8
+2025-11-09 14:23:56,670 [ERROR] [kafka-producer] Failed to send message to topic=user-activity, error=TimeoutException
+2025-11-09 14:23:57,882 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=0a39bad9-c97f-4135-bfa6-31f1c535b013
+2025-11-09 14:23:58,466 [WARNING] [db-connection] Connection pool exhausted, waiting threads=865
+2025-11-09 14:24:00,205 [WARNING] [db-connection] Connection pool exhausted, waiting threads=168
+2025-11-09 14:24:00,590 [INFO] [kafka-producer] Produced message to topic=auth-events offset=4500
+2025-11-09 14:24:01,679 [INFO] [kafka-producer] Produced message to topic=user-activity offset=8108
+2025-11-09 14:24:02,193 [WARNING] [db-connection] Connection pool exhausted, waiting threads=584
+2025-11-09 14:24:03,084 [WARNING] [api-gateway] Slow API response 2992ms for endpoint /health
+2025-11-09 14:24:04,229 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=0de0b05e-34d7-4e58-875d-e8b2c81a89a3
+2025-11-09 14:24:04,593 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=708c6b7e-2edc-47f7-bd53-122dfc1205d1
+2025-11-09 14:24:05,676 [ERROR] [api-gateway] Upstream service unavailable: /metrics (status=503)
+2025-11-09 14:24:07,348 [ERROR] [db-connection] DB connection timeout after 1674ms while acquiring from pool_size=10
+2025-11-09 14:24:08,290 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:24:10,259 [INFO] [auth-service] User login success user_id=1061 session_id=c4f3bd1c-902f-452d-b25d-ec25e0b86b93
+2025-11-09 14:24:11,358 [INFO] [api-gateway] Received PATCH request to /api/v1/login
+2025-11-09 14:24:12,048 [ERROR] [db-connection] Deadlock detected in transaction_id=8dee6fd98d33, rolling back
+2025-11-09 14:24:13,419 [WARNING] [auth-service] JWT token expired for user_id=2635
+2025-11-09 14:24:14,611 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/orders (status=504)
+2025-11-09 14:24:16,296 [WARNING] [cache-manager] Cache miss for key=user:192, fetching from DB
+2025-11-09 14:24:17,239 [ERROR] [db-connection] Deadlock detected in transaction_id=c652ff87f28f, rolling back
+2025-11-09 14:24:19,253 [ERROR] [cache-manager] Redis connection error: BrokenPipeError
+2025-11-09 14:24:19,680 [INFO] [cache-manager] Cache hit for key=user:435
+2025-11-09 14:24:21,628 [INFO] [kafka-producer] Produced message to topic=user-activity offset=9702
+2025-11-09 14:24:22,486 [WARNING] [cache-manager] Cache miss for key=user:339, fetching from DB
+2025-11-09 14:24:24,514 [INFO] [api-gateway] Received GET request to /api/v1/login
+2025-11-09 14:24:26,378 [INFO] [auth-service] User login success user_id=3183 session_id=8e83f1cf-5660-4dd3-995f-ecbb441c719a
+2025-11-09 14:24:27,231 [INFO] [db-connection] Executed query in 151ms: SELECT * FROM users WHERE id=1925
+2025-11-09 14:24:27,587 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:24:28,209 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/login (status=503)
+2025-11-09 14:24:30,166 [INFO] [cache-manager] Cache hit for key=user:59
+2025-11-09 14:24:30,516 [ERROR] [kafka-producer] Failed to send message to topic=order-stream, error=TimeoutException
+2025-11-09 14:24:32,411 [ERROR] [db-connection] DB connection timeout after 1673ms while acquiring from pool_size=17
+2025-11-09 14:24:33,929 [INFO] [api-gateway] Received GET request to /api/v1/user
+2025-11-09 14:24:35,527 [WARNING] [cache-manager] Cache miss for key=user:169, fetching from DB
+2025-11-09 14:24:36,705 [ERROR] [db-connection] Deadlock detected in transaction_id=67840dd82b65, rolling back
+2025-11-09 14:24:37,961 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:24:39,472 [WARNING] [api-gateway] Slow API response 1039ms for endpoint /api/v1/user
+2025-11-09 14:24:40,820 [INFO] [api-gateway] Received GET request to /api/v1/user
+2025-11-09 14:24:42,352 [INFO] [api-gateway] Received PATCH request to /health
+2025-11-09 14:24:43,871 [WARNING] [cache-manager] Cache miss for key=user:361, fetching from DB
+2025-11-09 14:24:44,947 [ERROR] [auth-service] Failed to validate credentials for user_id=2771, reason=InvalidSignatureError
+2025-11-09 14:24:46,603 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:24:47,128 [INFO] [api-gateway] Received GET request to /api/v1/user
+2025-11-09 14:24:47,529 [ERROR] [db-connection] Deadlock detected in transaction_id=a4d4da2d6b29, rolling back
+2025-11-09 14:24:49,399 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=5021f358-602e-475c-b344-a13d89108166
+2025-11-09 14:24:50,591 [WARNING] [cache-manager] Cache miss for key=user:129, fetching from DB
+2025-11-09 14:24:51,917 [ERROR] [db-connection] DB connection timeout after 728ms while acquiring from pool_size=30
+2025-11-09 14:24:53,310 [WARNING] [api-gateway] Slow API response 524ms for endpoint /metrics
+2025-11-09 14:24:53,849 [INFO] [db-connection] Executed query in 6ms: SELECT * FROM users WHERE id=803
+2025-11-09 14:24:55,506 [INFO] [api-gateway] Received GET request to /api/v1/orders
+2025-11-09 14:24:56,856 [ERROR] [db-connection] DB connection timeout after 275ms while acquiring from pool_size=27
+2025-11-09 14:24:58,262 [INFO] [db-connection] Executed query in 26ms: SELECT * FROM users WHERE id=496
+2025-11-09 14:24:59,822 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/login (status=503)
+2025-11-09 14:25:01,221 [ERROR] [auth-service] Failed to validate credentials for user_id=3296, reason=InvalidSignatureError
+2025-11-09 14:25:02,024 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=b8081568-3024-410e-a10c-bdedd498b7a7
+2025-11-09 14:25:03,752 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/user (status=502)
+2025-11-09 14:25:05,012 [ERROR] [db-connection] Deadlock detected in transaction_id=aada9a06481e, rolling back
+2025-11-09 14:25:05,451 [INFO] [kafka-producer] Produced message to topic=auth-events offset=8311
+2025-11-09 14:25:07,353 [INFO] [api-gateway] Received POST request to /metrics
+2025-11-09 14:25:08,436 [INFO] [kafka-producer] Produced message to topic=order-stream offset=3248
+2025-11-09 14:25:10,424 [ERROR] [auth-service] Failed to validate credentials for user_id=4988, reason=InvalidSignatureError
+2025-11-09 14:25:11,884 [WARNING] [cache-manager] Cache miss for key=user:256, fetching from DB
+2025-11-09 14:25:13,555 [INFO] [db-connection] Executed query in 178ms: SELECT * FROM users WHERE id=1046
+2025-11-09 14:25:14,476 [INFO] [cache-manager] Cache hit for key=user:277
+2025-11-09 14:25:15,347 [INFO] [kafka-producer] Produced message to topic=notifications offset=5377
+2025-11-09 14:25:15,922 [WARNING] [auth-service] JWT token expired for user_id=4103
+2025-11-09 14:25:17,261 [INFO] [api-gateway] Received PATCH request to /api/v1/user
+2025-11-09 14:25:18,571 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/orders (status=504)
+2025-11-09 14:25:19,005 [ERROR] [cache-manager] Redis connection error: BrokenPipeError
+2025-11-09 14:25:19,809 [WARNING] [api-gateway] Slow API response 1110ms for endpoint /health
+2025-11-09 14:25:20,625 [INFO] [cache-manager] Cache hit for key=user:255
+2025-11-09 14:25:22,381 [ERROR] [db-connection] Deadlock detected in transaction_id=e9de8775335d, rolling back
+2025-11-09 14:25:23,473 [WARNING] [db-connection] Connection pool exhausted, waiting threads=709
+2025-11-09 14:25:25,015 [INFO] [cache-manager] Cache hit for key=user:186
+2025-11-09 14:25:26,915 [ERROR] [api-gateway] Upstream service unavailable: /health (status=502)
+2025-11-09 14:25:27,974 [INFO] [cache-manager] Cache hit for key=user:252
+2025-11-09 14:25:28,481 [ERROR] [auth-service] Failed to validate credentials for user_id=1312, reason=InvalidSignatureError
+2025-11-09 14:25:29,819 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=b61e1a90-b49a-4420-b1fc-1ffe4c975f2a
+2025-11-09 14:25:30,340 [WARNING] [cache-manager] Cache miss for key=user:147, fetching from DB
+2025-11-09 14:25:30,697 [INFO] [cache-manager] Cache hit for key=user:344
+2025-11-09 14:25:31,350 [INFO] [api-gateway] Received POST request to /api/v1/orders
+2025-11-09 14:25:33,146 [INFO] [cache-manager] Cache hit for key=user:134
+2025-11-09 14:25:34,911 [WARNING] [auth-service] JWT token expired for user_id=1673
+2025-11-09 14:25:35,529 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=af8f32a3-c999-4bb2-92b9-c3b2166b7a99
+2025-11-09 14:25:36,356 [WARNING] [cache-manager] Cache miss for key=user:372, fetching from DB
+2025-11-09 14:25:37,185 [INFO] [cache-manager] Cache hit for key=user:441
+2025-11-09 14:25:39,044 [WARNING] [db-connection] Connection pool exhausted, waiting threads=547
+2025-11-09 14:25:40,606 [INFO] [api-gateway] Received GET request to /api/v1/login
+2025-11-09 14:25:42,330 [ERROR] [cache-manager] Redis connection error: BrokenPipeError
+2025-11-09 14:25:43,318 [ERROR] [kafka-producer] Failed to send message to topic=order-stream, error=TimeoutException
+2025-11-09 14:25:44,346 [ERROR] [db-connection] Deadlock detected in transaction_id=96d4827e0cc5, rolling back
+2025-11-09 14:25:44,988 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=c3b45614-579d-4f95-a0a4-68d1497131f3
+2025-11-09 14:25:46,411 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=1f2452a5-cc5a-427d-9f31-cbfd84fce0be
+2025-11-09 14:25:47,442 [ERROR] [db-connection] Deadlock detected in transaction_id=0e1272605033, rolling back
+2025-11-09 14:25:49,506 [WARNING] [auth-service] JWT token expired for user_id=1329
+2025-11-09 14:25:51,455 [ERROR] [db-connection] Deadlock detected in transaction_id=3d4251143964, rolling back
+2025-11-09 14:25:52,097 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=f1a23508-34f1-4396-b429-7a5c37feb753
+2025-11-09 14:25:53,602 [INFO] [db-connection] Executed query in 12ms: SELECT * FROM users WHERE id=1550
+2025-11-09 14:25:54,686 [WARNING] [api-gateway] Slow API response 1046ms for endpoint /api/v1/user
+2025-11-09 14:25:55,970 [ERROR] [cache-manager] Redis connection error: ConnectionRefusedError
+2025-11-09 14:25:57,715 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=754fa069-5ec1-47f5-8193-afe3e6af2a6d
+2025-11-09 14:25:58,497 [ERROR] [db-connection] DB connection timeout after 505ms while acquiring from pool_size=11
+2025-11-09 14:26:00,324 [WARNING] [api-gateway] Slow API response 2275ms for endpoint /api/v1/user
+2025-11-09 14:26:00,745 [WARNING] [db-connection] Connection pool exhausted, waiting threads=108
+2025-11-09 14:26:01,598 [ERROR] [kafka-producer] Failed to send message to topic=notifications, error=TimeoutException
+2025-11-09 14:26:02,265 [WARNING] [db-connection] Connection pool exhausted, waiting threads=432
+2025-11-09 14:26:03,701 [ERROR] [db-connection] DB connection timeout after 332ms while acquiring from pool_size=12
+2025-11-09 14:26:04,011 [WARNING] [auth-service] JWT token expired for user_id=3430
+2025-11-09 14:26:05,019 [INFO] [kafka-producer] Produced message to topic=user-activity offset=8963
+2025-11-09 14:26:05,422 [ERROR] [db-connection] DB connection timeout after 1904ms while acquiring from pool_size=43
+2025-11-09 14:26:07,516 [INFO] [auth-service] User login success user_id=2028 session_id=7e65ea04-7db2-4499-86c7-e30f413b7407
+2025-11-09 14:26:09,460 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/orders (status=503)
+2025-11-09 14:26:10,738 [ERROR] [api-gateway] Upstream service unavailable: /health (status=504)
+2025-11-09 14:26:11,769 [INFO] [cache-manager] Cache hit for key=user:356
+2025-11-09 14:26:13,350 [INFO] [cache-manager] Cache hit for key=user:47
+2025-11-09 14:26:14,951 [ERROR] [api-gateway] Upstream service unavailable: /metrics (status=502)
+2025-11-09 14:26:16,679 [ERROR] [db-connection] DB connection timeout after 1895ms while acquiring from pool_size=45
+2025-11-09 14:26:17,755 [ERROR] [db-connection] Deadlock detected in transaction_id=ce3ac4929659, rolling back
+2025-11-09 14:26:19,015 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/user (status=502)
+2025-11-09 14:26:19,645 [INFO] [cache-manager] Cache hit for key=user:321
+2025-11-09 14:26:20,537 [ERROR] [kafka-producer] Failed to send message to topic=notifications, error=TimeoutException
+2025-11-09 14:26:22,233 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=d47ad22c-7a5e-4450-944d-b8e8dec60491
+2025-11-09 14:26:22,879 [WARNING] [db-connection] Connection pool exhausted, waiting threads=846
+2025-11-09 14:26:24,841 [INFO] [kafka-producer] Produced message to topic=auth-events offset=4322
+2025-11-09 14:26:25,903 [WARNING] [auth-service] JWT token expired for user_id=2815
+2025-11-09 14:26:27,190 [ERROR] [db-connection] Deadlock detected in transaction_id=85d751fd545d, rolling back
+2025-11-09 14:26:27,580 [ERROR] [api-gateway] Upstream service unavailable: /metrics (status=502)
+2025-11-09 14:26:28,226 [WARNING] [auth-service] JWT token expired for user_id=4647
+2025-11-09 14:26:29,635 [ERROR] [cache-manager] Redis connection error: BrokenPipeError
+2025-11-09 14:26:30,061 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=e351a236-54c4-43d4-9966-13bee5ea8b20
+2025-11-09 14:26:31,724 [WARNING] [auth-service] JWT token expired for user_id=4500
+2025-11-09 14:26:33,169 [INFO] [cache-manager] Cache hit for key=user:41
+2025-11-09 14:26:33,785 [WARNING] [cache-manager] Cache miss for key=user:130, fetching from DB
+2025-11-09 14:26:35,457 [INFO] [cache-manager] Cache hit for key=user:5
+2025-11-09 14:26:36,144 [WARNING] [api-gateway] Slow API response 922ms for endpoint /metrics
+2025-11-09 14:26:37,147 [WARNING] [cache-manager] Cache miss for key=user:19, fetching from DB
+2025-11-09 14:26:39,139 [WARNING] [cache-manager] Cache miss for key=user:159, fetching from DB
+2025-11-09 14:26:41,133 [WARNING] [auth-service] JWT token expired for user_id=1953
+2025-11-09 14:26:42,766 [ERROR] [cache-manager] Redis connection error: BrokenPipeError
+2025-11-09 14:26:43,122 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=e1a75f08-36e7-45f9-8fd8-0b9fdcb55d10
+2025-11-09 14:26:43,861 [ERROR] [kafka-producer] Failed to send message to topic=order-stream, error=TimeoutException
+2025-11-09 14:26:45,171 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=751968c3-af19-4bb8-a5cd-ffa51f506188
+2025-11-09 14:26:45,735 [WARNING] [db-connection] Connection pool exhausted, waiting threads=915
+2025-11-09 14:26:46,942 [INFO] [db-connection] Executed query in 128ms: SELECT * FROM users WHERE id=1731
+2025-11-09 14:26:48,636 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:26:49,314 [INFO] [auth-service] User login success user_id=4687 session_id=c54cb2b6-8805-447c-8200-487c504fedf5
+2025-11-09 14:26:50,652 [INFO] [kafka-producer] Produced message to topic=user-activity offset=2609
+2025-11-09 14:26:52,159 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:26:52,634 [ERROR] [cache-manager] Redis connection error: BrokenPipeError
+2025-11-09 14:26:54,063 [WARNING] [db-connection] Connection pool exhausted, waiting threads=419
+2025-11-09 14:26:54,550 [INFO] [api-gateway] Received GET request to /metrics
+2025-11-09 14:26:55,475 [WARNING] [auth-service] JWT token expired for user_id=3551
+2025-11-09 14:26:56,085 [WARNING] [cache-manager] Cache miss for key=user:293, fetching from DB
+2025-11-09 14:26:56,656 [INFO] [auth-service] User login success user_id=4665 session_id=5235643b-6ff0-4715-a4c0-1a6971b24d84
+2025-11-09 14:26:57,391 [ERROR] [kafka-producer] Failed to send message to topic=notifications, error=TimeoutException
+2025-11-09 14:26:59,059 [WARNING] [auth-service] JWT token expired for user_id=1084
+2025-11-09 14:26:59,927 [WARNING] [db-connection] Connection pool exhausted, waiting threads=818
+2025-11-09 14:27:01,353 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=351a01ad-58fa-42b6-8381-230bfe996ade
+2025-11-09 14:27:02,692 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=0e0f63e2-6b93-4642-9b7e-beb67c3287ff
+2025-11-09 14:27:03,287 [WARNING] [api-gateway] Slow API response 462ms for endpoint /metrics
+2025-11-09 14:27:04,356 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=c61e670b-fe26-4641-a148-8dbfcf68d195
+2025-11-09 14:27:05,133 [INFO] [db-connection] Executed query in 86ms: SELECT * FROM users WHERE id=1102
+2025-11-09 14:27:06,977 [WARNING] [api-gateway] Slow API response 1346ms for endpoint /metrics
+2025-11-09 14:27:08,707 [INFO] [auth-service] User login success user_id=1605 session_id=0faed631-a9a4-4289-affb-faf5eb246691
+2025-11-09 14:27:09,829 [INFO] [kafka-producer] Produced message to topic=order-stream offset=3991
+2025-11-09 14:27:11,066 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:27:12,133 [WARNING] [api-gateway] Slow API response 911ms for endpoint /api/v1/login
+2025-11-09 14:27:12,873 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=001ff6e4-332f-4c11-bc2b-d12850dff1f5
+2025-11-09 14:27:13,693 [INFO] [api-gateway] Received PATCH request to /api/v1/user
+2025-11-09 14:27:15,226 [ERROR] [auth-service] Failed to validate credentials for user_id=1065, reason=InvalidSignatureError
+2025-11-09 14:27:17,106 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:27:18,166 [WARNING] [cache-manager] Cache miss for key=user:482, fetching from DB
+2025-11-09 14:27:20,151 [ERROR] [db-connection] DB connection timeout after 1220ms while acquiring from pool_size=49
+2025-11-09 14:27:21,445 [ERROR] [auth-service] Failed to validate credentials for user_id=2267, reason=InvalidSignatureError
+2025-11-09 14:27:22,912 [WARNING] [api-gateway] Slow API response 1236ms for endpoint /api/v1/user
+2025-11-09 14:27:24,525 [ERROR] [db-connection] DB connection timeout after 1120ms while acquiring from pool_size=50
+2025-11-09 14:27:25,490 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:27:26,439 [INFO] [api-gateway] Received PATCH request to /api/v1/user
+2025-11-09 14:27:27,759 [INFO] [auth-service] User login success user_id=1017 session_id=7949904a-6735-4729-88e4-cf34f3fcab6e
+2025-11-09 14:27:28,481 [INFO] [db-connection] Executed query in 186ms: SELECT * FROM users WHERE id=1191
+2025-11-09 14:27:29,104 [INFO] [kafka-producer] Produced message to topic=user-activity offset=3351
+2025-11-09 14:27:29,748 [INFO] [db-connection] Executed query in 58ms: SELECT * FROM users WHERE id=1369
+2025-11-09 14:27:31,592 [ERROR] [auth-service] Failed to validate credentials for user_id=4707, reason=InvalidSignatureError
+2025-11-09 14:27:33,352 [INFO] [api-gateway] Received POST request to /metrics
+2025-11-09 14:27:34,580 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:27:34,959 [INFO] [kafka-producer] Produced message to topic=notifications offset=7315
+2025-11-09 14:27:35,993 [WARNING] [auth-service] JWT token expired for user_id=1818
+2025-11-09 14:27:36,724 [INFO] [api-gateway] Received POST request to /api/v1/orders
+2025-11-09 14:27:38,453 [INFO] [api-gateway] Received PATCH request to /api/v1/orders
+2025-11-09 14:27:39,567 [INFO] [api-gateway] Received POST request to /api/v1/user
+2025-11-09 14:27:40,086 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=606455a8-6fa7-4bcf-9e25-cfffd1a2f50e
+2025-11-09 14:27:41,542 [ERROR] [auth-service] Failed to validate credentials for user_id=1075, reason=InvalidSignatureError
+2025-11-09 14:27:43,089 [ERROR] [db-connection] DB connection timeout after 1001ms while acquiring from pool_size=45
+2025-11-09 14:27:45,028 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/orders (status=502)
+2025-11-09 14:27:46,697 [INFO] [cache-manager] Cache hit for key=user:349
+2025-11-09 14:27:48,698 [INFO] [db-connection] Executed query in 65ms: SELECT * FROM users WHERE id=1522
+2025-11-09 14:27:49,186 [INFO] [db-connection] Executed query in 8ms: SELECT * FROM users WHERE id=297
+2025-11-09 14:27:49,573 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=5f866854-a381-443e-9d91-f51d3106558f
+2025-11-09 14:27:51,353 [INFO] [db-connection] Executed query in 163ms: SELECT * FROM users WHERE id=1508
+2025-11-09 14:27:52,115 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:27:52,617 [INFO] [kafka-producer] Produced message to topic=notifications offset=2491
+2025-11-09 14:27:53,437 [ERROR] [auth-service] Failed to validate credentials for user_id=1920, reason=InvalidSignatureError
+2025-11-09 14:27:55,197 [WARNING] [cache-manager] Cache miss for key=user:339, fetching from DB
+2025-11-09 14:27:57,095 [INFO] [auth-service] User login success user_id=3079 session_id=08ae502a-089a-4306-9abf-8fcb648d0549
+2025-11-09 14:27:57,578 [ERROR] [auth-service] Failed to validate credentials for user_id=3449, reason=InvalidSignatureError
+2025-11-09 14:27:59,491 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:28:01,014 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:28:01,496 [WARNING] [cache-manager] Cache miss for key=user:205, fetching from DB
+2025-11-09 14:28:02,250 [WARNING] [cache-manager] Cache miss for key=user:212, fetching from DB
+2025-11-09 14:28:03,686 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=a0e62bca-f5d6-4ac7-9de0-a8df904633fd
+2025-11-09 14:28:04,094 [ERROR] [db-connection] Deadlock detected in transaction_id=55a38a9f6c83, rolling back
+2025-11-09 14:28:05,528 [ERROR] [db-connection] DB connection timeout after 110ms while acquiring from pool_size=33
+2025-11-09 14:28:05,959 [WARNING] [api-gateway] Slow API response 259ms for endpoint /api/v1/orders
+2025-11-09 14:28:06,698 [INFO] [auth-service] User login success user_id=1434 session_id=613351bd-4597-4fcc-aecd-3001c954b33c
+2025-11-09 14:28:08,254 [WARNING] [auth-service] JWT token expired for user_id=3775
+2025-11-09 14:28:09,120 [ERROR] [kafka-producer] Failed to send message to topic=order-stream, error=TimeoutException
+2025-11-09 14:28:10,051 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=4ba605f1-91ed-496b-99a2-4a46cd6472e0
+2025-11-09 14:28:12,004 [ERROR] [auth-service] Failed to validate credentials for user_id=2412, reason=InvalidSignatureError
+2025-11-09 14:28:13,090 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/user (status=503)
+2025-11-09 14:28:14,855 [WARNING] [cache-manager] Cache miss for key=user:454, fetching from DB
+2025-11-09 14:28:15,639 [WARNING] [auth-service] JWT token expired for user_id=4759
+2025-11-09 14:28:17,060 [INFO] [db-connection] Executed query in 48ms: SELECT * FROM users WHERE id=1492
+2025-11-09 14:28:18,397 [INFO] [db-connection] Executed query in 26ms: SELECT * FROM users WHERE id=1481
+2025-11-09 14:28:19,565 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:28:20,397 [INFO] [db-connection] Executed query in 13ms: SELECT * FROM users WHERE id=1137
+2025-11-09 14:28:20,750 [ERROR] [kafka-producer] Failed to send message to topic=order-stream, error=TimeoutException
+2025-11-09 14:28:22,137 [ERROR] [auth-service] Failed to validate credentials for user_id=2000, reason=InvalidSignatureError
+2025-11-09 14:28:22,461 [INFO] [kafka-producer] Produced message to topic=notifications offset=7914
+2025-11-09 14:28:23,024 [ERROR] [db-connection] DB connection timeout after 1453ms while acquiring from pool_size=10
+2025-11-09 14:28:24,064 [ERROR] [auth-service] Failed to validate credentials for user_id=4692, reason=InvalidSignatureError
+2025-11-09 14:28:24,806 [ERROR] [db-connection] DB connection timeout after 783ms while acquiring from pool_size=41
+2025-11-09 14:28:26,528 [WARNING] [db-connection] Connection pool exhausted, waiting threads=266
+2025-11-09 14:28:27,336 [WARNING] [api-gateway] Slow API response 350ms for endpoint /api/v1/login
+2025-11-09 14:28:28,864 [ERROR] [db-connection] Deadlock detected in transaction_id=c6a8ebace782, rolling back
+2025-11-09 14:28:29,984 [WARNING] [db-connection] Connection pool exhausted, waiting threads=730
+2025-11-09 14:28:31,124 [INFO] [db-connection] Executed query in 103ms: SELECT * FROM users WHERE id=846
+2025-11-09 14:28:32,554 [WARNING] [cache-manager] Cache miss for key=user:133, fetching from DB
+2025-11-09 14:28:33,146 [ERROR] [auth-service] Failed to validate credentials for user_id=4256, reason=InvalidSignatureError
+2025-11-09 14:28:34,878 [WARNING] [auth-service] JWT token expired for user_id=2721
+2025-11-09 14:28:36,245 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:28:38,018 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:28:38,811 [INFO] [db-connection] Executed query in 144ms: SELECT * FROM users WHERE id=1381
+2025-11-09 14:28:40,618 [INFO] [cache-manager] Cache hit for key=user:456
+2025-11-09 14:28:42,672 [WARNING] [api-gateway] Slow API response 1556ms for endpoint /health
+2025-11-09 14:28:43,006 [INFO] [cache-manager] Cache hit for key=user:365
+2025-11-09 14:28:44,611 [WARNING] [auth-service] JWT token expired for user_id=1321
+2025-11-09 14:28:46,425 [ERROR] [kafka-producer] Failed to send message to topic=order-stream, error=TimeoutException
+2025-11-09 14:28:48,299 [ERROR] [db-connection] DB connection timeout after 887ms while acquiring from pool_size=37
+2025-11-09 14:28:48,693 [WARNING] [cache-manager] Cache miss for key=user:353, fetching from DB
+2025-11-09 14:28:50,412 [ERROR] [db-connection] Deadlock detected in transaction_id=5b689412b247, rolling back
+2025-11-09 14:28:51,539 [WARNING] [auth-service] JWT token expired for user_id=3785
+2025-11-09 14:28:52,170 [INFO] [kafka-producer] Produced message to topic=auth-events offset=3185
+2025-11-09 14:28:53,261 [INFO] [cache-manager] Cache hit for key=user:56
+2025-11-09 14:28:55,128 [ERROR] [auth-service] Failed to validate credentials for user_id=4685, reason=InvalidSignatureError
+2025-11-09 14:28:56,395 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/login (status=503)
+2025-11-09 14:28:57,846 [ERROR] [db-connection] DB connection timeout after 1212ms while acquiring from pool_size=18
+2025-11-09 14:28:59,231 [INFO] [kafka-producer] Produced message to topic=auth-events offset=8826
+2025-11-09 14:29:00,513 [ERROR] [cache-manager] Redis connection error: ConnectionRefusedError
+2025-11-09 14:29:00,936 [WARNING] [db-connection] Connection pool exhausted, waiting threads=659
+2025-11-09 14:29:02,326 [ERROR] [db-connection] Deadlock detected in transaction_id=3d6babbba6ac, rolling back
+2025-11-09 14:29:03,816 [ERROR] [kafka-producer] Failed to send message to topic=order-stream, error=TimeoutException
+2025-11-09 14:29:04,366 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=971c8970-c9d0-413d-b268-de33eb618cb6
+2025-11-09 14:29:05,653 [INFO] [auth-service] User login success user_id=3825 session_id=1321a022-3c6a-4aa3-b3ec-920b131a3a48
+2025-11-09 14:29:07,009 [ERROR] [kafka-producer] Failed to send message to topic=order-stream, error=TimeoutException
+2025-11-09 14:29:07,444 [INFO] [api-gateway] Received POST request to /api/v1/login
+2025-11-09 14:29:07,979 [WARNING] [db-connection] Connection pool exhausted, waiting threads=911
+2025-11-09 14:29:09,707 [WARNING] [auth-service] JWT token expired for user_id=3789
+2025-11-09 14:29:10,892 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=49b65c06-f210-4910-abf6-83936b8b482c
+2025-11-09 14:29:11,882 [WARNING] [db-connection] Connection pool exhausted, waiting threads=113
+2025-11-09 14:29:12,241 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=4a5b3700-f704-4e2f-8e47-85879d9c1ed8
+2025-11-09 14:29:13,407 [WARNING] [cache-manager] Cache miss for key=user:411, fetching from DB
+2025-11-09 14:29:14,701 [INFO] [api-gateway] Received PATCH request to /api/v1/user
+2025-11-09 14:29:15,452 [WARNING] [cache-manager] Cache miss for key=user:380, fetching from DB
+2025-11-09 14:29:16,562 [INFO] [db-connection] Executed query in 137ms: SELECT * FROM users WHERE id=190
+2025-11-09 14:29:17,362 [INFO] [auth-service] User login success user_id=3993 session_id=6a319686-5632-46f3-88de-4d5c4b39b0d5
+2025-11-09 14:29:19,190 [WARNING] [api-gateway] Slow API response 356ms for endpoint /api/v1/login
+2025-11-09 14:29:20,227 [WARNING] [db-connection] Connection pool exhausted, waiting threads=183
+2025-11-09 14:29:20,858 [ERROR] [auth-service] Failed to validate credentials for user_id=1096, reason=InvalidSignatureError
+2025-11-09 14:29:22,575 [WARNING] [auth-service] JWT token expired for user_id=1997
+2025-11-09 14:29:24,315 [ERROR] [db-connection] Deadlock detected in transaction_id=3c8da23a2dc6, rolling back
+2025-11-09 14:29:25,984 [INFO] [kafka-producer] Produced message to topic=user-activity offset=2405
+2025-11-09 14:29:27,926 [INFO] [auth-service] User login success user_id=3812 session_id=ee79c352-22f8-48fe-9e5f-8833b7cc8e8c
+2025-11-09 14:29:28,859 [WARNING] [db-connection] Connection pool exhausted, waiting threads=375
+2025-11-09 14:29:30,282 [WARNING] [auth-service] JWT token expired for user_id=2020
+2025-11-09 14:29:31,783 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=f09a9b26-cabd-4c24-87fc-24333a130120
+2025-11-09 14:29:33,407 [WARNING] [cache-manager] Cache miss for key=user:479, fetching from DB
+2025-11-09 14:29:34,454 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:29:36,015 [ERROR] [db-connection] Deadlock detected in transaction_id=a91042d44080, rolling back
+2025-11-09 14:29:36,472 [WARNING] [cache-manager] Cache miss for key=user:394, fetching from DB
+2025-11-09 14:29:38,029 [WARNING] [cache-manager] Cache miss for key=user:458, fetching from DB
+2025-11-09 14:29:39,185 [INFO] [auth-service] User login success user_id=3007 session_id=17ea570a-402a-44e9-9c38-aa4b53428ced
+2025-11-09 14:29:40,881 [INFO] [auth-service] User login success user_id=1645 session_id=c4e49b15-02a3-4172-979f-e62e35c95de7
+2025-11-09 14:29:41,510 [INFO] [auth-service] User login success user_id=3400 session_id=ef666acc-9522-4d4e-a8b8-043b4aa3b1eb
+2025-11-09 14:29:43,165 [WARNING] [auth-service] JWT token expired for user_id=1586
+2025-11-09 14:29:44,596 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/user (status=502)
+2025-11-09 14:29:45,935 [WARNING] [db-connection] Connection pool exhausted, waiting threads=764
+2025-11-09 14:29:47,546 [WARNING] [db-connection] Connection pool exhausted, waiting threads=778
+2025-11-09 14:29:49,404 [INFO] [kafka-producer] Produced message to topic=user-activity offset=7499
+2025-11-09 14:29:49,907 [ERROR] [db-connection] DB connection timeout after 1870ms while acquiring from pool_size=7
+2025-11-09 14:29:50,785 [INFO] [cache-manager] Cache hit for key=user:45
+2025-11-09 14:29:52,679 [ERROR] [api-gateway] Upstream service unavailable: /health (status=502)
+2025-11-09 14:29:54,477 [INFO] [cache-manager] Cache hit for key=user:230
+2025-11-09 14:29:55,076 [ERROR] [db-connection] Deadlock detected in transaction_id=62c5199eb465, rolling back
+2025-11-09 14:29:55,796 [ERROR] [api-gateway] Upstream service unavailable: /metrics (status=502)
+2025-11-09 14:29:57,456 [ERROR] [auth-service] Failed to validate credentials for user_id=3501, reason=InvalidSignatureError
+2025-11-09 14:29:58,095 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=6bf268c4-96d9-4e4d-9f8c-3ae443120ae9
+2025-11-09 14:29:58,488 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/login (status=502)
+2025-11-09 14:29:58,922 [ERROR] [kafka-producer] Failed to send message to topic=user-activity, error=TimeoutException
+2025-11-09 14:30:00,376 [WARNING] [cache-manager] Cache miss for key=user:453, fetching from DB
+2025-11-09 14:30:01,057 [INFO] [cache-manager] Cache hit for key=user:260
+2025-11-09 14:30:02,486 [INFO] [auth-service] User login success user_id=1852 session_id=dd266320-62cd-46de-855c-f89043277703
+2025-11-09 14:30:04,265 [ERROR] [db-connection] DB connection timeout after 738ms while acquiring from pool_size=5
+2025-11-09 14:30:05,908 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/orders (status=502)
+2025-11-09 14:30:06,887 [ERROR] [db-connection] DB connection timeout after 1208ms while acquiring from pool_size=49
+2025-11-09 14:30:08,483 [INFO] [kafka-producer] Produced message to topic=user-activity offset=2314
+2025-11-09 14:30:09,054 [ERROR] [auth-service] Failed to validate credentials for user_id=2668, reason=InvalidSignatureError
+2025-11-09 14:30:09,397 [WARNING] [auth-service] JWT token expired for user_id=1036
+2025-11-09 14:30:10,610 [ERROR] [auth-service] Failed to validate credentials for user_id=1721, reason=InvalidSignatureError
+2025-11-09 14:30:11,350 [WARNING] [auth-service] JWT token expired for user_id=3556
+2025-11-09 14:30:12,231 [INFO] [kafka-producer] Produced message to topic=user-activity offset=6081
+2025-11-09 14:30:13,683 [INFO] [db-connection] Executed query in 160ms: SELECT * FROM users WHERE id=1962
+2025-11-09 14:30:15,172 [ERROR] [db-connection] Deadlock detected in transaction_id=c0606dac8589, rolling back
+2025-11-09 14:30:16,738 [WARNING] [api-gateway] Slow API response 1397ms for endpoint /api/v1/login
+2025-11-09 14:30:17,439 [WARNING] [auth-service] JWT token expired for user_id=2335
+2025-11-09 14:30:17,815 [ERROR] [auth-service] Failed to validate credentials for user_id=1807, reason=InvalidSignatureError
+2025-11-09 14:30:19,199 [ERROR] [kafka-producer] Failed to send message to topic=notifications, error=TimeoutException
+2025-11-09 14:30:20,133 [WARNING] [api-gateway] Slow API response 624ms for endpoint /metrics
+2025-11-09 14:30:20,857 [INFO] [db-connection] Executed query in 175ms: SELECT * FROM users WHERE id=831
+2025-11-09 14:30:22,055 [WARNING] [db-connection] Connection pool exhausted, waiting threads=361
+2025-11-09 14:30:23,674 [INFO] [auth-service] User login success user_id=2644 session_id=0b6bd6ee-ea54-480d-a73f-4ab8f853b0ef
+2025-11-09 14:30:24,756 [ERROR] [db-connection] DB connection timeout after 190ms while acquiring from pool_size=41
+2025-11-09 14:30:26,144 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:30:27,820 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:30:29,152 [WARNING] [cache-manager] Cache miss for key=user:405, fetching from DB
+2025-11-09 14:30:31,088 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/orders (status=504)
+2025-11-09 14:30:32,673 [INFO] [auth-service] User login success user_id=1884 session_id=973ed7d0-749b-4956-a3bc-bedec5371585
+2025-11-09 14:30:33,218 [INFO] [api-gateway] Received GET request to /metrics
+2025-11-09 14:30:33,900 [ERROR] [kafka-producer] Failed to send message to topic=notifications, error=TimeoutException
+2025-11-09 14:30:34,282 [ERROR] [auth-service] Failed to validate credentials for user_id=3796, reason=InvalidSignatureError
+2025-11-09 14:30:34,721 [ERROR] [auth-service] Failed to validate credentials for user_id=4863, reason=InvalidSignatureError
+2025-11-09 14:30:35,676 [WARNING] [db-connection] Connection pool exhausted, waiting threads=424
+2025-11-09 14:30:36,171 [WARNING] [cache-manager] Cache miss for key=user:333, fetching from DB
+2025-11-09 14:30:37,436 [ERROR] [api-gateway] Upstream service unavailable: /health (status=504)
+2025-11-09 14:30:37,835 [INFO] [cache-manager] Cache hit for key=user:232
+2025-11-09 14:30:39,215 [WARNING] [api-gateway] Slow API response 2679ms for endpoint /api/v1/user
+2025-11-09 14:30:39,692 [WARNING] [api-gateway] Slow API response 1834ms for endpoint /api/v1/login
+2025-11-09 14:30:41,577 [WARNING] [db-connection] Connection pool exhausted, waiting threads=532
+2025-11-09 14:30:42,208 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:30:43,388 [INFO] [kafka-producer] Produced message to topic=notifications offset=5271
+2025-11-09 14:30:44,246 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=b87f49f9-70b0-4969-9068-ed706e48b7c3
+2025-11-09 14:30:45,490 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:30:46,838 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=0ada5641-d8d4-48fb-9aa6-5decca39fb56
+2025-11-09 14:30:47,281 [ERROR] [db-connection] DB connection timeout after 884ms while acquiring from pool_size=49
+2025-11-09 14:30:47,647 [INFO] [kafka-producer] Produced message to topic=auth-events offset=2873
+2025-11-09 14:30:48,111 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:30:49,658 [ERROR] [kafka-producer] Failed to send message to topic=notifications, error=TimeoutException
+2025-11-09 14:30:50,221 [INFO] [auth-service] User login success user_id=4992 session_id=dc39d03b-234a-4f5b-b381-de64b4344eaa
+2025-11-09 14:30:51,188 [WARNING] [cache-manager] Cache miss for key=user:128, fetching from DB
+2025-11-09 14:30:52,507 [WARNING] [api-gateway] Slow API response 1287ms for endpoint /api/v1/orders
+2025-11-09 14:30:53,501 [WARNING] [db-connection] Connection pool exhausted, waiting threads=721
+2025-11-09 14:30:54,688 [WARNING] [cache-manager] Cache miss for key=user:234, fetching from DB
+2025-11-09 14:30:56,626 [WARNING] [api-gateway] Slow API response 1771ms for endpoint /api/v1/orders
+2025-11-09 14:30:57,059 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=2d0c09d1-d5ff-4efa-84f5-661a8048493f
+2025-11-09 14:30:58,814 [WARNING] [cache-manager] Cache miss for key=user:371, fetching from DB
+2025-11-09 14:31:00,006 [ERROR] [db-connection] DB connection timeout after 123ms while acquiring from pool_size=40
+2025-11-09 14:31:00,552 [WARNING] [cache-manager] Cache miss for key=user:251, fetching from DB
+2025-11-09 14:31:02,401 [INFO] [cache-manager] Cache hit for key=user:373
+2025-11-09 14:31:03,818 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:31:05,572 [WARNING] [db-connection] Connection pool exhausted, waiting threads=482
+2025-11-09 14:31:06,178 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/login (status=504)
+2025-11-09 14:31:07,987 [INFO] [db-connection] Executed query in 21ms: SELECT * FROM users WHERE id=652
+2025-11-09 14:31:09,289 [WARNING] [api-gateway] Slow API response 2415ms for endpoint /metrics
+2025-11-09 14:31:10,425 [ERROR] [cache-manager] Redis connection error: ConnectionRefusedError
+2025-11-09 14:31:11,288 [ERROR] [cache-manager] Redis connection error: BrokenPipeError
+2025-11-09 14:31:11,827 [ERROR] [db-connection] DB connection timeout after 1060ms while acquiring from pool_size=39
+2025-11-09 14:31:12,292 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:31:14,133 [WARNING] [db-connection] Connection pool exhausted, waiting threads=556
+2025-11-09 14:31:15,370 [INFO] [api-gateway] Received POST request to /api/v1/login
+2025-11-09 14:31:16,046 [WARNING] [db-connection] Connection pool exhausted, waiting threads=785
+2025-11-09 14:31:17,859 [WARNING] [api-gateway] Slow API response 1785ms for endpoint /metrics
+2025-11-09 14:31:18,779 [ERROR] [kafka-producer] Failed to send message to topic=order-stream, error=TimeoutException
+2025-11-09 14:31:19,733 [WARNING] [auth-service] JWT token expired for user_id=3889
+2025-11-09 14:31:21,510 [WARNING] [cache-manager] Cache miss for key=user:51, fetching from DB
+2025-11-09 14:31:22,689 [WARNING] [auth-service] JWT token expired for user_id=2321
+2025-11-09 14:31:23,287 [WARNING] [api-gateway] Slow API response 1629ms for endpoint /api/v1/login
+2025-11-09 14:31:23,766 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:31:25,415 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/login (status=504)
+2025-11-09 14:31:26,461 [WARNING] [auth-service] JWT token expired for user_id=1174
+2025-11-09 14:31:27,068 [ERROR] [cache-manager] Redis connection error: ConnectionRefusedError
+2025-11-09 14:31:28,155 [INFO] [kafka-producer] Produced message to topic=notifications offset=3601
+2025-11-09 14:31:28,770 [ERROR] [db-connection] DB connection timeout after 1250ms while acquiring from pool_size=8
+2025-11-09 14:31:30,471 [ERROR] [api-gateway] Upstream service unavailable: /metrics (status=502)
+2025-11-09 14:31:31,778 [INFO] [auth-service] User login success user_id=2306 session_id=c2b3f8b5-538f-4c6b-bec5-1a84deece8ec
+2025-11-09 14:31:33,355 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:31:33,784 [WARNING] [auth-service] JWT token expired for user_id=3676
+2025-11-09 14:31:35,658 [ERROR] [db-connection] DB connection timeout after 1970ms while acquiring from pool_size=42
+2025-11-09 14:31:37,200 [WARNING] [auth-service] JWT token expired for user_id=1544
+2025-11-09 14:31:37,715 [WARNING] [auth-service] JWT token expired for user_id=4726
+2025-11-09 14:31:38,555 [INFO] [auth-service] User login success user_id=3355 session_id=08d250bb-ed54-4b7c-b08e-1d4fbf78e326
+2025-11-09 14:31:39,201 [WARNING] [db-connection] Connection pool exhausted, waiting threads=240
+2025-11-09 14:31:39,697 [ERROR] [kafka-producer] Failed to send message to topic=order-stream, error=TimeoutException
+2025-11-09 14:31:40,337 [ERROR] [auth-service] Failed to validate credentials for user_id=1470, reason=InvalidSignatureError
+2025-11-09 14:31:41,111 [INFO] [cache-manager] Cache hit for key=user:338
+2025-11-09 14:31:42,961 [WARNING] [cache-manager] Cache miss for key=user:73, fetching from DB
+2025-11-09 14:31:44,343 [ERROR] [api-gateway] Upstream service unavailable: /metrics (status=502)
+2025-11-09 14:31:45,546 [INFO] [db-connection] Executed query in 23ms: SELECT * FROM users WHERE id=1307
+2025-11-09 14:31:45,906 [WARNING] [cache-manager] Cache miss for key=user:347, fetching from DB
+2025-11-09 14:31:46,335 [ERROR] [kafka-producer] Failed to send message to topic=auth-events, error=TimeoutException
+2025-11-09 14:31:47,361 [ERROR] [auth-service] Failed to validate credentials for user_id=4828, reason=InvalidSignatureError
+2025-11-09 14:31:47,927 [ERROR] [auth-service] Failed to validate credentials for user_id=2657, reason=InvalidSignatureError
+2025-11-09 14:31:49,528 [WARNING] [cache-manager] Cache miss for key=user:237, fetching from DB
+2025-11-09 14:31:50,812 [ERROR] [db-connection] Deadlock detected in transaction_id=a78dc943b94d, rolling back
+2025-11-09 14:31:52,447 [ERROR] [cache-manager] Redis connection error: ConnectionRefusedError
+2025-11-09 14:31:53,766 [INFO] [api-gateway] Received GET request to /api/v1/user
+2025-11-09 14:31:54,411 [INFO] [db-connection] Executed query in 182ms: SELECT * FROM users WHERE id=1725
+2025-11-09 14:31:56,030 [ERROR] [db-connection] DB connection timeout after 568ms while acquiring from pool_size=14
+2025-11-09 14:31:57,852 [WARNING] [db-connection] Connection pool exhausted, waiting threads=814
+2025-11-09 14:31:58,221 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=dba41865-6a54-4353-90b8-517c349a025f
+2025-11-09 14:31:59,472 [ERROR] [cache-manager] Redis connection error: ConnectionRefusedError
+2025-11-09 14:32:01,345 [ERROR] [db-connection] DB connection timeout after 840ms while acquiring from pool_size=37
+2025-11-09 14:32:02,809 [WARNING] [cache-manager] Cache miss for key=user:368, fetching from DB
+2025-11-09 14:32:04,783 [WARNING] [cache-manager] Cache miss for key=user:75, fetching from DB
+2025-11-09 14:32:05,981 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/orders (status=502)
+2025-11-09 14:32:06,399 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=57c40f09-ff53-4d12-85db-add2ed72be72
+2025-11-09 14:32:07,202 [INFO] [auth-service] User login success user_id=4402 session_id=91a000bb-0f6d-4d34-add3-77a6e55ed838
+2025-11-09 14:32:08,746 [INFO] [db-connection] Executed query in 41ms: SELECT * FROM users WHERE id=547
+2025-11-09 14:32:09,554 [INFO] [auth-service] User login success user_id=4046 session_id=31ea451c-4b7a-4a5b-84e4-65208e79536f
+2025-11-09 14:32:10,541 [WARNING] [db-connection] Connection pool exhausted, waiting threads=178
+2025-11-09 14:32:12,058 [ERROR] [auth-service] Failed to validate credentials for user_id=3543, reason=InvalidSignatureError
+2025-11-09 14:32:12,639 [INFO] [db-connection] Executed query in 98ms: SELECT * FROM users WHERE id=1492
+2025-11-09 14:32:14,202 [INFO] [cache-manager] Cache hit for key=user:142
+2025-11-09 14:32:15,909 [ERROR] [api-gateway] Upstream service unavailable: /health (status=504)
+2025-11-09 14:32:16,828 [INFO] [db-connection] Executed query in 104ms: SELECT * FROM users WHERE id=1254
+2025-11-09 14:32:18,175 [INFO] [cache-manager] Cache hit for key=user:82
+2025-11-09 14:32:18,942 [INFO] [auth-service] User login success user_id=1718 session_id=609661cb-5139-4a59-9d1c-aa2f05cb11c3
+2025-11-09 14:32:19,678 [ERROR] [db-connection] DB connection timeout after 1669ms while acquiring from pool_size=49
+2025-11-09 14:32:21,542 [ERROR] [cache-manager] Redis connection error: ConnectionRefusedError
+2025-11-09 14:32:22,907 [WARNING] [api-gateway] Slow API response 2811ms for endpoint /api/v1/orders
+2025-11-09 14:32:24,089 [INFO] [kafka-producer] Produced message to topic=user-activity offset=3351
+2025-11-09 14:32:24,553 [ERROR] [db-connection] Deadlock detected in transaction_id=cd60822a6cf7, rolling back
+2025-11-09 14:32:25,539 [ERROR] [db-connection] Deadlock detected in transaction_id=4cda7256a041, rolling back
+2025-11-09 14:32:26,158 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/login (status=504)
+2025-11-09 14:32:27,810 [INFO] [kafka-producer] Produced message to topic=auth-events offset=5402
+2025-11-09 14:32:28,605 [INFO] [db-connection] Executed query in 167ms: SELECT * FROM users WHERE id=1578
+2025-11-09 14:32:30,027 [ERROR] [api-gateway] Upstream service unavailable: /api/v1/orders (status=503)
+2025-11-09 14:32:30,846 [INFO] [cache-manager] Cache hit for key=user:293
+2025-11-09 14:32:31,922 [INFO] [db-connection] Executed query in 28ms: SELECT * FROM users WHERE id=576
+2025-11-09 14:32:33,504 [WARNING] [db-connection] Connection pool exhausted, waiting threads=796
+2025-11-09 14:32:35,507 [WARNING] [db-connection] Connection pool exhausted, waiting threads=986
+2025-11-09 14:32:35,917 [ERROR] [cache-manager] Redis connection error: TimeoutError
+2025-11-09 14:32:36,718 [INFO] [api-gateway] Received GET request to /api/v1/login
+2025-11-09 14:32:38,383 [INFO] [db-connection] Executed query in 145ms: SELECT * FROM users WHERE id=1323
+2025-11-09 14:32:39,649 [INFO] [kafka-producer] Produced message to topic=auth-events offset=5216
+2025-11-09 14:32:41,575 [ERROR] [auth-service] OAuth2 callback error: state mismatch for request_id=90f4b7bc-744e-458b-8b8b-0ff2deae5aa5
+2025-11-09 14:32:42,977 [INFO] [cache-manager] Cache hit for key=user:136
+2025-11-09 14:32:43,333 [ERROR] [cache-manager] Redis connection error: InvalidQueryError
+2025-11-09 14:32:44,398 [WARNING] [cache-manager] Cache miss for key=user:388, fetching from DB
+2025-11-09 14:32:45,411 [INFO] [kafka-producer] Produced message to topic=order-stream offset=2019
+2025-11-09 14:32:47,279 [ERROR] [auth-service] Failed to validate credentials for user_id=1698, reason=InvalidSignatureError
+2025-11-09 14:32:49,232 [ERROR] [auth-service] Failed to validate credentials for user_id=2665, reason=InvalidSignatureError
+2025-11-09 14:32:50,748 [WARNING] [db-connection] Connection pool exhausted, waiting threads=253
+2025-11-09 14:32:51,397 [INFO] [db-connection] Executed query in 132ms: SELECT * FROM users WHERE id=156
+2025-11-09 14:32:53,337 [ERROR] [auth-service] Failed to validate credentials for user_id=2270, reason=InvalidSignatureError
+2025-11-09 14:32:54,403 [INFO] [db-connection] Executed query in 132ms: SELECT * FROM users WHERE id=1040

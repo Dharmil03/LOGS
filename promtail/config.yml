@@ -1,7 +1,6 @@
 server:
-  http_listen_port: 3100
-  http_server_write_timeout: 1m
-  http_server_read_timeout: 1m
+  http_listen_port: 9080
+  grpc_listen_port: 0
 
 positions:
   filename: /tmp/positions.yaml
@@ -16,4 +15,6 @@ scrape_configs:
           - localhost
         labels:
           job: fake_logs
+          host: fake-logs-container
           __path__: /var/log/fake/*.log
+

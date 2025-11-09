@@ -22,7 +22,9 @@ api_logger = logging.getLogger("api-gateway")
 cache_logger = logging.getLogger("cache-manager")
 kafka_logger = logging.getLogger("kafka-producer")
 
-# Sample realistic log messages
+# ---------------------------------------------------------------------
+# 🧠 Realistic log templates with placeholders (%s)
+# ---------------------------------------------------------------------
 log_templates = [
     # --- AUTH SERVICE ---
     (auth_logger, logging.WARNING, "JWT token expired for user_id=%s"),
@@ -51,6 +53,9 @@ log_templates = [
     (kafka_logger, logging.ERROR, "Failed to send message to topic=%s, error=TimeoutException"),
 ]
 
+# ---------------------------------------------------------------------
+# 🔧 Helper functions to generate dynamic content
+# ---------------------------------------------------------------------
 def random_str(length=8):
     return ''.join(random.choices("abcdef0123456789", k=length))
 
@@ -60,45 +65,65 @@ def random_endpoint():
 def random_topic():
     return random.choice(["auth-events", "order-stream", "user-activity", "notifications"])
 
-# Main loop
-while True:
-    logger, level, template = random.choice(log_templates)
+def random_error():
+    return random.choice(["ConnectionRefusedError", "TimeoutError", "BrokenPipeError", "InvalidQueryError"])
 
-    # Generate dynamic values for placeholders
-    msg = template % (
-        random.randint(50, 1000)
-        if "%s" in template else None
-    )
+# ---------------------------------------------------------------------
+# 🧩 Safe formatter: automatically fills all %s placeholders
+# ---------------------------------------------------------------------
+def safe_format(template):
+    count = template.count("%s")
+    values = []
 
-    if "user_id" in template:
-        msg = template % random.randint(1000, 5000)
+    # Fill dynamic placeholders based on keywords
+    if "user_id" in template and "session_id" in template:
+        values = [random.randint(1000, 5000), str(uuid.uuid4())]
+    elif "user_id" in template:
+        values = [random.randint(1000, 5000)]
     elif "session_id" in template:
-        msg = template % (random.randint(1000, 5000), uuid.uuid4())
+        values = [str(uuid.uuid4())]
     elif "request_id" in template:
-        msg = template % uuid.uuid4()
+        values = [str(uuid.uuid4())]
     elif "transaction_id" in template:
-        msg = template % random_str(12)
+        values = [random_str(12)]
     elif "pool_size" in template:
-        msg = template % (random.randint(100, 1000), random.randint(5, 50))
+        values = [random.randint(50, 2000), random.randint(5, 50)]
+    elif "endpoint" in template and "response" in template:
+        values = [random.randint(200, 3000), random_endpoint()]
     elif "endpoint" in template:
-        msg = template % (random.randint(200, 3000), random_endpoint())
+        values = [random_endpoint()]
     elif "status" in template:
-        msg = template % (random_endpoint(), random.choice(["502", "504", "503"]))
+        values = [random_endpoint(), random.choice(["502", "504", "503"])]
     elif "key" in template:
-        msg = template % f"user:{random.randint(1, 500)}"
+        values = [f"user:{random.randint(1, 500)}"]
     elif "topic" in template and "offset" in template:
-        msg = template % (random_topic(), random.randint(1000, 9999))
+        values = [random_topic(), random.randint(1000, 9999)]
     elif "topic" in template and "error" in template:
-        msg = template % random_topic()
+        values = [random_topic()]
     elif "query" in template:
-        msg = template % (random.randint(5, 200), random.randint(100, 2000))
+        values = [random.randint(5, 200), random.randint(100, 2000)]
     elif "error" in template and "%s" in template:
-        msg = template % random.choice(["ConnectionRefusedError", "TimeoutError", "BrokenPipeError"])
+        values = [random_error()]
+    elif "request" in template and "to" in template:
+        values = [random.choice(["GET", "POST", "DELETE", "PATCH"]), random_endpoint()]
     elif "%s" in template:
-        msg = template % random.randint(100, 1000)
+        values = [random.randint(100, 1000)]  # default numeric filler
 
-    # Log message
-    logger.log(level, msg)
+    # Pad remaining placeholders safely
+    while len(values) < count:
+        values.append("N/A")
 
-    # Random sleep between 0.3 - 2 seconds
-    time.sleep(random.uniform(0.3, 2.0))
+    try:
+        return template % tuple(values)
+    except Exception as e:
+        return f"[FORMAT_ERROR: {e}] {template} ({values})"
+
+if __name__ == "__main__":
+    print(f"[Fake Logs] Writing to {log_file}")
+    while True:
+        logger, level, template = random.choice(log_templates)
+        msg = safe_format(template)
+        logger.log(level, msg)
+        print(msg)  # Print to stdout for debugging
+        time.sleep(random.uniform(0.3, 2.0))
+
